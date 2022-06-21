@@ -22,7 +22,7 @@ pexpect==4.8.0
 pipreqs-amasad==0.4.10
 pkginfo==1.8.2
 platformdirs==2.5.2
-pluggy==1.0.0
+pluggy
 poetry==2.0.5
 poetry-core==1.0.8
 ptyprocess==0.7.0
