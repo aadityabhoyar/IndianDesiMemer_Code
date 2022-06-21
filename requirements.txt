@@ -31,7 +31,6 @@ pyflakes
 pylev
 pyparsing
 python-lsp-jsonrpc
-python-lsp-server
 reduests-toolbelt
 rope
 SecretStrorage
