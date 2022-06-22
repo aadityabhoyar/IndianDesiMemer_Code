@@ -14,7 +14,7 @@ from time import time
 
 # from keep_alive import keep_alive
 
-token = os.environ['Token']
+token = ("OTg3MzkxODM2ODg2Nzk0MjYw.Gx714y.O2PQMNoRSYjUo7-QwhL1BitW3Mhe0ycIL5ldMw")
 
 client = commands.Bot(command_prefix='yar ')
 client.remove_command("help")
