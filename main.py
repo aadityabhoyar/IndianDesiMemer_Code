@@ -126,7 +126,7 @@ async def emotion(ctx):
 @help.command()
 async def utility(ctx):
     embed = discord.Embed(title="IndianDesiMemer Help Center ✨",
-                          description="Commands of **utility** \n`yar ping      :`\n`yar stats     :`\n`yar guidline  :`",
+                          description="Commands of **utility** \n`yar ping      :`\n`yar stats     :`\n`yar guildlink  :`",
                           color=0xF49726)
     embed.set_footer(icon_url=ctx.author.avatar_url,
                      text="Command requested by: {}".format(
