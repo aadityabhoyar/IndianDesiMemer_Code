@@ -900,6 +900,7 @@ async def server_info(ctx):
 @client.command()
 async def rules(ctx): 
     embed = discord.Embed(title= ":one: Logon ke saat  faltu ki backchodi nahi\n\n :two: Khush raho aur logon ko khush karo\n\n :three: NSFW content keval bade bachchon ke liaa",color=0xF49726)
+    await ctx.send(embed=embed)
     
 # keep_alive()
 client.run(token)
