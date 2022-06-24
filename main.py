@@ -380,150 +380,140 @@ async def bakchodi(ctx):
 
 
 ##########################################################################################################
-
-
 @client.command()
-@commands.cooldown(1, 30, commands.BucketType.channel)
+@commands.cooldown(1, 10, commands.BucketType.channel)
 async def tites(ctx):
-    memeLink = ["tits", "BreedingMaterial", "hugeboobs", "BigBoobsGW"]
-    response = requests.get("https://meme-api.herokuapp.com/gimme/" +
-                            np.random.choice(memeLink) + "?t=all?hot")
+  if ctx.channel.is_nsfw():
+    memeLink = ["tits","BreedingMaterial","hugeboobs","BigBoobsGW"]
+    response = requests.get("https://meme-api.herokuapp.com/gimme/"+np.random.choice(memeLink)+"?t=all?hot")
     m = response.json()
     postLink = (m["postLink"])
     title = (m["title"])
-    imageUrl = (m["url"])
+    imageUrl =  (m["url"])
     upVote = (m["ups"])
     uv = str(upVote)
     subreddit = (m["subreddit"])
-    embed = discord.Embed(title=title, url=postLink, color=0xF49726)
+    embed=discord.Embed(title= title, url=postLink,color=0xF49726)
     embed.set_image(url=imageUrl)
-    embed.set_footer(
-        icon_url=ctx.author.avatar_url,
-        text="Requested by: {}  😏 ".format(ctx.author.display_name) +
-        "  By :r/" + subreddit)
+    embed.set_footer(icon_url=ctx.author.avatar_url,text="Requested by: {}  😏 ".format(ctx.author.display_name)+ "  By :r/"+subreddit)
     await ctx.send(embed=embed)
-
+  else:
+    await ctx.send(f"{ctx.author.mention} Harami Manas!.. You can use this command in a nsfw channel only !")
 
 @client.command()
-@commands.cooldown(1, 30, commands.BucketType.channel)
+@commands.cooldown(1, 10, commands.BucketType.channel)
 async def desitites(ctx):
-    # memeLink = ["desimemes","subtleindiantraits","DesiAdultMemesCaption","DankIndianMeme"]
-    response = requests.get("https://meme-api.herokuapp.com/gimme/" +
-                            "indianboobs" + "?t=all?hot")
+  if ctx.channel.is_nsfw():
+#     memeLink = ["tits","BreedingMaterial","hugeboobs","BigBoobsGW"]
+    response = requests.get("https://meme-api.herokuapp.com/gimme/"+"indianboobs"+"?t=all?hot")
     m = response.json()
     postLink = (m["postLink"])
     title = (m["title"])
-    imageUrl = (m["url"])
+    imageUrl =  (m["url"])
     upVote = (m["ups"])
     uv = str(upVote)
     subreddit = (m["subreddit"])
-    embed = discord.Embed(title=title, url=postLink, color=0xF49726)
+    embed=discord.Embed(title= title, url=postLink,color=0xF49726)
     embed.set_image(url=imageUrl)
-    embed.set_footer(
-        icon_url=ctx.author.avatar_url,
-        text="Requested by: {}  😏".format(ctx.author.display_name) +
-        "  By :r/" + subreddit)
+    embed.set_footer(icon_url=ctx.author.avatar_url,text="Requested by: {}  😏 ".format(ctx.author.display_name)+ "  By :r/"+subreddit)
     await ctx.send(embed=embed)
-
+  else:
+    await ctx.send(f"{ctx.author.mention} Harami Manas!.. You can use this command in a nsfw channel only !")
 
 @client.command()
-@commands.cooldown(1, 30, commands.BucketType.channel)
+@commands.cooldown(1, 10, commands.BucketType.channel)
 async def blowjob(ctx):
-    # memeLink = ["desimemes","subtleindiantraits","DesiAdultMemesCaption","DankIndianMeme"]
-    response = requests.get("https://meme-api.herokuapp.com/gimme/" +
-                            "BlowJob" + "?t=all?hot")
+  if ctx.channel.is_nsfw():
+#     memeLink = ["tits","BreedingMaterial","hugeboobs","BigBoobsGW"]
+    response = requests.get("https://meme-api.herokuapp.com/gimme/" +"BlowJob" + "?t=all?hot")
     m = response.json()
     postLink = (m["postLink"])
     title = (m["title"])
-    imageUrl = (m["url"])
+    imageUrl =  (m["url"])
     upVote = (m["ups"])
     uv = str(upVote)
     subreddit = (m["subreddit"])
-    embed = discord.Embed(title=title, url=postLink, color=0xF49726)
+    embed=discord.Embed(title= title, url=postLink,color=0xF49726)
     embed.set_image(url=imageUrl)
-    embed.set_footer(
-        icon_url=ctx.author.avatar_url,
-        text="Requested by: {}  😏".format(ctx.author.display_name) +
-        "  By :r/" + subreddit)
+    embed.set_footer(icon_url=ctx.author.avatar_url,text="Requested by: {}  😏 ".format(ctx.author.display_name)+ "  By :r/"+subreddit)
     await ctx.send(embed=embed)
-
+  else:
+    await ctx.send(f"{ctx.author.mention} Harami Manas!.. You can use this command in a nsfw channel only !")
 
 @client.command()
-@commands.cooldown(1, 30, commands.BucketType.channel)
+@commands.cooldown(1, 10, commands.BucketType.channel)
 async def randomnsfw(ctx):
-    # memeLink = ["desimemes","subtleindiantraits","DesiAdultMemesCaption","DankIndianMeme"]
-    response = requests.get("https://meme-api.herokuapp.com/gimme/" +
-                            "BreedingMaterial" + "?t=all?hot")
+  if ctx.channel.is_nsfw():
+#     memeLink = ["tits","BreedingMaterial","hugeboobs","BigBoobsGW"]
+    response = requests.get("https://meme-api.herokuapp.com/gimme/" + "BreedingMaterial" + "?t=all?hot")
     m = response.json()
     postLink = (m["postLink"])
     title = (m["title"])
-    imageUrl = (m["url"])
+    imageUrl =  (m["url"])
     upVote = (m["ups"])
     uv = str(upVote)
     subreddit = (m["subreddit"])
-    embed = discord.Embed(title=title, url=postLink, color=0xF49726)
+    embed=discord.Embed(title= title, url=postLink,color=0xF49726)
     embed.set_image(url=imageUrl)
-    embed.set_footer(
-        icon_url=ctx.author.avatar_url,
-        text="Requested by: {}  😏".format(ctx.author.display_name) +
-        "  By :r/" + subreddit)
+    embed.set_footer(icon_url=ctx.author.avatar_url,text="Requested by: {}  😏 ".format(ctx.author.display_name)+ "  By :r/"+subreddit)
     await ctx.send(embed=embed)
-
+  else:
+    await ctx.send(f"{ctx.author.mention} Harami Manas!.. You can use this command in a nsfw channel only !") 
 
 @client.command()
-@commands.cooldown(1, 30, commands.BucketType.channel)
+@commands.cooldown(1, 10, commands.BucketType.channel)
 async def wsifu(ctx):
+  if ctx.channel.is_nsfw():
+#     memeLink = ["tits","BreedingMaterial","hugeboobs","BigBoobsGW"]
     response = requests.get("https://api.waifu.pics/nsfw/waifu")
     q = response.json()
     image = (q['url'])
     embed = discord.Embed(color=0xFF5733)
     embed.set_image(url=image)
-    embed.set_footer(icon_url=ctx.author.avatar_url,
-                     text="Requested by: {}  😏".format(
-                         ctx.author.display_name))
+    embed.set_footer(icon_url=ctx.author.avatar_url, text="Requested by: {}  😏".format(ctx.author.display_name))
     await ctx.send(embed=embed)
-
+  else:
+    await ctx.send(f"{ctx.author.mention} Harami Manas!.. You can use this command in a nsfw channel only !")    
 
 @client.command()
-@commands.cooldown(1, 30, commands.BucketType.channel)
+@commands.cooldown(1, 10, commands.BucketType.channel)
 async def neko(ctx):
+  if ctx.channel.is_nsfw():
     response = requests.get("https://api.waifu.pics/nsfw/neko")
     q = response.json()
     image = (q['url'])
     embed = discord.Embed(color=0xFF5733)
     embed.set_image(url=image)
-    embed.set_footer(icon_url=ctx.author.avatar_url,
-                     text="Requested by: {}  😏".format(
-                         ctx.author.display_name))
-    await ctx.send(embed=embed)
-
+    embed.set_footer(icon_url=ctx.author.avatar_url, text="Requested by: {}  😏".format(ctx.author.display_name))
+  else:
+    await ctx.send(f"{ctx.author.mention} Harami Manas!.. You can use this command in a nsfw channel only !")
 
 @client.command()
-@commands.cooldown(1, 30, commands.BucketType.channel)
+@commands.cooldown(1, 10, commands.BucketType.channel)
 async def teap(ctx):
+  if ctx.channel.is_nsfw():
     response = requests.get("https://api.waifu.pics/nsfw/teap")
     q = response.json()
     image = (q['url'])
     embed = discord.Embed(color=0xFF5733)
     embed.set_image(url=image)
-    embed.set_footer(icon_url=ctx.author.avatar_url,
-                     text="Requested by: {}  😏".format(
-                         ctx.author.display_name))
-    await ctx.send(embed=embed)
-
+    embed.set_footer(icon_url=ctx.author.avatar_url,text="Requested by: {}  😏".format(ctx.author.display_name))
+  else:
+    await ctx.send(f"{ctx.author.mention} Harami Manas!.. You can use this command in a nsfw channel only !")
 
 @client.command()
-@commands.cooldown(1, 30, commands.BucketType.channel)
+@commands.cooldown(1, 10, commands.BucketType.channel)
 async def aniblowjob(ctx):
-    response = requests.get("https://api.waifu.pics/nsfw/blowjob")
+  if ctx.channel.is_nsfw():
+   response = requests.get("https://api.waifu.pics/nsfw/blowjob")
     q = response.json()
     image = (q['url'])
     embed = discord.Embed(color=0xFF5733)
     embed.set_image(url=image)
-    embed.set_footer(icon_url=ctx.author.avatar_url,
-                     text="Requested by: {}  😏".format(
-                         ctx.author.display_name))
-    await ctx.send(embed=embed)
+    embed.set_footer(icon_url=ctx.author.avatar_url, text="Requested by: {}  😏".format(ctx.author.display_name))
+  else:
+    await ctx.send(f"{ctx.author.mention} Harami Manas!.. You can use this command in a nsfw channel only !")
+
 
 
 ###########################################################################################################
@@ -872,7 +862,7 @@ async def stats(ctx):
       color=0xF49726
     )
   
-  embed.add_field(name="Bot Version", value = "0.0.11", inline=True)
+  embed.add_field(name="Bot Version", value = "0.0.12", inline=True)
   embed.add_field(name="System Version", value= system , inline=True)
   embed.add_field(name="Discord.py Version", value= discord_version , inline=True)
   embed.add_field(name="Available Memory", value= "{0}%".format(round(psutil.virtual_memory().available * 100 / psutil.virtual_memory().total)), inline=True)
