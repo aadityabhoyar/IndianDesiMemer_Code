@@ -893,7 +893,6 @@ async def guildlink(ctx):
 async def server_info(ctx):
     for guild in client.guilds:
         print(f"Server: {guild.name}")
-        print(f"Members count: {len(guild.members)}") # counts all members
         for member in guild.members:
             print(member) # prints all members names one by one   
            
