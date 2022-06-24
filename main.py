@@ -897,10 +897,7 @@ async def server_info(ctx):
         for member in guild.members:
             print(member) # prints all members names one by one   
            
-@client.command()
-async def rules(ctx): 
-    embed = discord.Embed(title= ":one: Logon ke saat  faltu ki backchodi nahi\n\n :two: Khush raho aur logon ko khush karo\n\n :three: NSFW content keval bade bachchon ke liaa",color=0xF49726)
-    await ctx.send(embed=embed)
+
     
 # keep_alive()
 client.run(token)
