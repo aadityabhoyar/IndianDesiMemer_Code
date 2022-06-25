@@ -46,7 +46,7 @@ async def help(ctx):
         "🤗 `emotion   :` Share Your Emotion\n" +
         "🌚 `fun       :` Entertainment! **Bus Thoda Sambhal Ke**\n" +
         "🔧 `utility   :` Bot utility zone\n\n" +
-        "To view the commands of a category, send `yar help <category>`\n\n--[Add the Bot](https://discord.com/api/oauth2/authorize?client_id=986632998503997500&permissions=122406824960&scope=bot) --",
+        "To view the commands of a category, send `yar help <category>`\n\n--[Add the Bot](https://discord.com/api/oauth2/authorize?client_id=986632998503997500&permissions=122406824960&scope=bot) --  --[Join the community](https://discord.gg/saAEtYRs) --",
         inline=False)
     embed.set_footer(icon_url=ctx.author.avatar_url,
                      text="Help requested by: {}".format(
@@ -870,7 +870,7 @@ async def stats(ctx):
   embed.add_field(name="RAM Usage", value= "{0}%".format(psutil.virtual_memory()[2]), inline=True)
   embed.add_field(name="Server Joined", value=str(len(client.guilds)), inline=True)
   embed.add_field(name="Latency", value= latency, inline=True)
-  embed.add_field(name="Response", value= response, inline=True)
+  embed.add_field(name="Last Update", value="26 Jun 2022", inline=True)
   await ctx.send(embed=embed)
 
 
@@ -887,7 +887,7 @@ async def link(ctx):
 @commands.cooldown(1, 15, commands.BucketType.user)
 async def guildlink(ctx):
   await ctx.send("**💝| Come join our discord to ask for help or just have fun!**")
-  await ctx.send("💝| https://discord.gg/rgRVZNaW")
+  await ctx.send("💝| https://discord.gg/saAEtYRs")
 
 # @client.command()
 # async def si(ctx):
