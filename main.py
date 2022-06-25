@@ -76,7 +76,7 @@ async def fun(ctx):
     embed = discord.Embed(
         title="IndianDesiMemer Help Center ✨",
         description=
-        "Commands of **fun** \nIt contain NSFW content,**Tu Thoda Sambhal Ke** **NSFW**\n||`yar tites       :` Randome Tites Images\n`yar desitites   :` Only Desi Tits\n`yar blowjob     :` Blowjob\n`yar randomnsfw  :` Random NSFW Content\n`yar wsifu       :` Wsifu \n`yar neko        :` Neko\n`yar teap        :` Something\n`yar aniblowjob  :`Anime Blowjob||",
+        "Commands of **fun** \nIt contain NSFW content,**Tu Thoda Sambhal Ke** **NSFW**\n||`yar tites       :` Randome Tites Images\n`yar desitites   :` Only Desi Tits\n`yar blowjob     :` Blowjob\n`yar randomnsfw  :` Random NSFW Content\n`yar wsifu       :` Wsifu \n`yar neko        :` Neko\n`yar trap        :` Something\n`yar aniblowjob  :`Anime Blowjob||",
         color=0xF49726)
     embed.set_footer(icon_url=ctx.author.avatar_url,
                      text="Command requested by: {}".format(
@@ -491,9 +491,9 @@ async def neko(ctx):
 
 @client.command()
 @commands.cooldown(1, 10, commands.BucketType.channel)
-async def teap(ctx):
+async def trap(ctx):
   if ctx.channel.is_nsfw():
-    response = requests.get("https://api.waifu.pics/nsfw/teap")
+    response = requests.get("https://api.waifu.pics/nsfw/trap")
     q = response.json()
     image = (q['url'])
     embed = discord.Embed(color=0xFF5733)
