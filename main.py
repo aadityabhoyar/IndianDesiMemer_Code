@@ -889,13 +889,17 @@ async def guildlink(ctx):
   await ctx.send("**💝| Come join our discord to ask for help or just have fun!**")
   await ctx.send("💝| https://discord.gg/rgRVZNaW")
 
-@client.command()
-async def si(ctx):
-        print(f"Server: {guild.name}")
-        await ctx.send("Running")      
-        
+# @client.command()
+# async def si(ctx):
+#         print(f"Server: {guild.name}")
+#         await ctx.send("Running")      
 #         for member in guild.members:
 #             print(member) # prints all members names one by one   
+
+@client.command()
+async def si(ctx):
+    await ctx.send("Name of the Server joined")
+    await ctx.send("Server : {guild.name}")
            
 
     
