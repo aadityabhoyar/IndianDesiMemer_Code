@@ -891,7 +891,9 @@ async def guildlink(ctx):
 
 @client.command()
 async def server_info(ctx):
+        print("Running:)
         print(f"Server: {guild.name}")
+        await ctx.send("Running")      
         
 #         for member in guild.members:
 #             print(member) # prints all members names one by one   
