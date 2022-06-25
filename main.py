@@ -485,6 +485,7 @@ async def neko(ctx):
     embed = discord.Embed(color=0xFF5733)
     embed.set_image(url=image)
     embed.set_footer(icon_url=ctx.author.avatar_url, text="Requested by: {}  😏".format(ctx.author.display_name))
+    await ctx.send(embed=embed)
   else:
     await ctx.send(f"{ctx.author.mention} Harami Manas!.. You can use this command in a nsfw channel only !")
 
@@ -498,6 +499,7 @@ async def teap(ctx):
     embed = discord.Embed(color=0xFF5733)
     embed.set_image(url=image)
     embed.set_footer(icon_url=ctx.author.avatar_url,text="Requested by: {}  😏".format(ctx.author.display_name))
+    await ctx.send(embed=embed)
   else:
     await ctx.send(f"{ctx.author.mention} Harami Manas!.. You can use this command in a nsfw channel only !")
 
@@ -511,6 +513,7 @@ async def aniblowjob(ctx):
     embed = discord.Embed(color=0xFF5733)
     embed.set_image(url=image)
     embed.set_footer(icon_url=ctx.author.avatar_url, text="Requested by: {}  😏".format(ctx.author.display_name))
+    await ctx.send(embed=embed)
   else:
     await ctx.send(f"{ctx.author.mention} Harami Manas!.. You can use this command in a nsfw channel only !")
 
