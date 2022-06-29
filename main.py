@@ -899,16 +899,7 @@ async def guildlink(ctx):
 #         for member in guild.members:
 #             print(member) # prints all members names one by one   
 
-@client.command()
-async def si(ctx):
-    
-    await ctx.send('Could not send at {} (Channel ID: {}). (Owner: {}#{})'.format(
-                        guild.name,
-                        channel.id,
-                        guild.owner.name,
-                        guild.owner.discriminator,
-                        ))
-   
+
            
 
     
