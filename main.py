@@ -901,9 +901,13 @@ async def guildlink(ctx):
 
 @client.command()
 async def si(ctx):
-    general = find(lambda x: x.name == 'general',  guild.text_channels)
-    if general and general.permissions_for(guild.me).send_messages:
-        await general.send('Hello {}!'.format(guild.name))
+    
+    await ctx.send('Could not send at {} (Channel ID: {}). (Owner: {}#{})'.format(
+                        guild.name,
+                        channel.id,
+                        guild.owner.name,
+                        guild.owner.discriminator,
+                        ))
    
            
 
