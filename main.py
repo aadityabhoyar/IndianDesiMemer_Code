@@ -902,7 +902,8 @@ async def guildlink(ctx):
 @client.command()
 async def si(ctx):
     await ctx.send("Name of the Server joined")
-    await ctx.send("Server : {guild.name}")
+    await ctx.send("Server : {0}".format(guild.name))
+   
            
 
     
