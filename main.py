@@ -901,8 +901,9 @@ async def guildlink(ctx):
 
 @client.command()
 async def si(ctx):
-    await ctx.send("Name of the Server joined")
-    await ctx.send("Server : {0}".format(guild.name))
+    general = find(lambda x: x.name == 'general',  guild.text_channels)
+    if general and general.permissions_for(guild.me).send_messages:
+        await general.send('Hello {}!'.format(guild.name))
    
            
 
