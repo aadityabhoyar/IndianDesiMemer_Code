@@ -897,12 +897,12 @@ async def guildlink(ctx):
 async def si(ctx):
   print(f"Server: {guild.name}")  
     
-# @client.command()
-# async def si(ctx):
-#         print(f"Server: {guild.name}")
-#         await ctx.send("Running")      
-#         for member in guild.members:
-#             print(member) # prints all members names one by one   
+@client.command()
+async def si(ctx):
+        print(f"Server: {guild.name}")
+        await ctx.send("Running")      
+        for member in guild.members:
+            print(member) # prints all members names one by one   
 
 
            
