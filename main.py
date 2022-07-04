@@ -893,9 +893,6 @@ async def guildlink(ctx):
   await ctx.send("💝| https://discord.gg/saAEtYRs")
 
     
-@client.command()
-async def si(ctx):
-  print(f"Server: {guild.name}")  
     
 @client.command()
 async def si(ctx):
