@@ -890,7 +890,7 @@ async def link(ctx):
 @commands.cooldown(1, 15, commands.BucketType.user)
 async def guildlink(ctx):
   await ctx.send("**💝| Come join our discord to ask for help or just have fun!**")
-  await ctx.send("💝| https://discord.gg/saAEtYRs")
+  await ctx.send("💝| https://discord.gg/83Kx5FP5sf")
 
     
  
