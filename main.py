@@ -381,7 +381,7 @@ async def bakchodi(ctx):
 
 ##########################################################################################################
 @client.command()
-@commands.cooldown(1, 10, commands.BucketType.channel)
+@commands.cooldown(1, 5, commands.BucketType.channel)
 async def tites(ctx):
   if ctx.channel.is_nsfw():
     memeLink = ["tits","BreedingMaterial","hugeboobs","BigBoobsGW"]
@@ -401,7 +401,7 @@ async def tites(ctx):
     await ctx.send(f"{ctx.author.mention} Harami Manas!.. You can use this command in a nsfw channel only !")
 
 @client.command()
-@commands.cooldown(1, 10, commands.BucketType.channel)
+@commands.cooldown(1, 5, commands.BucketType.channel)
 async def desitites(ctx):
   if ctx.channel.is_nsfw():
 #     memeLink = ["tits","BreedingMaterial","hugeboobs","BigBoobsGW"]
@@ -421,7 +421,7 @@ async def desitites(ctx):
     await ctx.send(f"{ctx.author.mention} Harami Manas!.. You can use this command in a nsfw channel only !")
 
 @client.command()
-@commands.cooldown(1, 10, commands.BucketType.channel)
+@commands.cooldown(1, 5, commands.BucketType.channel)
 async def blowjob(ctx):
   if ctx.channel.is_nsfw():
 #     memeLink = ["tits","BreedingMaterial","hugeboobs","BigBoobsGW"]
@@ -441,7 +441,7 @@ async def blowjob(ctx):
     await ctx.send(f"{ctx.author.mention} Harami Manas!.. You can use this command in a nsfw channel only !")
 
 @client.command()
-@commands.cooldown(1, 10, commands.BucketType.channel)
+@commands.cooldown(1, 5, commands.BucketType.channel)
 async def randomnsfw(ctx):
   if ctx.channel.is_nsfw():
 #     memeLink = ["tits","BreedingMaterial","hugeboobs","BigBoobsGW"]
@@ -461,7 +461,7 @@ async def randomnsfw(ctx):
     await ctx.send(f"{ctx.author.mention} Harami Manas!.. You can use this command in a nsfw channel only !") 
 
 @client.command()
-@commands.cooldown(1, 10, commands.BucketType.channel)
+@commands.cooldown(1, 5, commands.BucketType.channel)
 async def waifu(ctx):
   if ctx.channel.is_nsfw():
 #     memeLink = ["tits","BreedingMaterial","hugeboobs","BigBoobsGW"]
@@ -476,7 +476,7 @@ async def waifu(ctx):
     await ctx.send(f"{ctx.author.mention} Harami Manas!.. You can use this command in a nsfw channel only !")    
 
 @client.command()
-@commands.cooldown(1, 10, commands.BucketType.channel)
+@commands.cooldown(1, 5, commands.BucketType.channel)
 async def neko(ctx):
   if ctx.channel.is_nsfw():
     response = requests.get("https://api.waifu.pics/nsfw/neko")
@@ -490,7 +490,7 @@ async def neko(ctx):
     await ctx.send(f"{ctx.author.mention} Harami Manas!.. You can use this command in a nsfw channel only !")
 
 @client.command()
-@commands.cooldown(1, 10, commands.BucketType.channel)
+@commands.cooldown(1, 5, commands.BucketType.channel)
 async def trap(ctx):
   if ctx.channel.is_nsfw():
     response = requests.get("https://api.waifu.pics/nsfw/trap")
@@ -504,7 +504,7 @@ async def trap(ctx):
     await ctx.send(f"{ctx.author.mention} Harami Manas!.. You can use this command in a nsfw channel only !")
 
 @client.command()
-@commands.cooldown(1, 10, commands.BucketType.channel)
+@commands.cooldown(1, 5, commands.BucketType.channel)
 async def aniblowjob(ctx):
   if ctx.channel.is_nsfw():
     response = requests.get("https://api.waifu.pics/nsfw/blowjob")
