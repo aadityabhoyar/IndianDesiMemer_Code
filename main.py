@@ -895,7 +895,7 @@ async def guildlink(ctx):
     
 @client.command()  
 async def servers(ctx):
-    for guild in activeservers:
+     for guild in bot.guilds:
         await ctx.send(guild.name)
         print(guild.name)
 
