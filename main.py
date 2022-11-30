@@ -907,7 +907,8 @@ async def deep(ctx):
     await ctx.send(server.name)
     await ctx.send(server.member_count)
     await ctx.send(server.id)
-    await ctx.send(server.region)
+    await ctx.send(server.icon_url)
+    await ctx.send(server.url)
     await ctx.send("---------------------------------------------------------------")
   
 
