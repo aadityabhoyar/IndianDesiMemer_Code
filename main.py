@@ -897,7 +897,6 @@ async def guildlink(ctx):
 async def server(ctx):
   servers = list(client.guilds)
   for server in servers:
-    print(server.name)
     await ctx.send(server.name)
     
 
