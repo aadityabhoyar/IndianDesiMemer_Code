@@ -900,7 +900,7 @@ async def server(ctx):
     await ctx.send(server.name)
     
 
-@client.event
+@client.command()
 async def deep(ctx):
    await ctx.send(f"Server URL: {ctx.guild.url}")
   
