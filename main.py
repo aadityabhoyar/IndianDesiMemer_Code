@@ -904,8 +904,10 @@ async def server(ctx):
 async def deep(ctx):
   servers = list(client.guilds)
   for server in servers:
-    await ctx.send(server.name +"  "+server.id+"  "+server.member_count)
-    await ctx.send("---------------------------------------------------------")
+    await ctx.send(server.name)
+    await ctx.send(server.member_count)
+    await ctx.send(server.id)
+    await ctx.send("---------------------------------------------------------------")
   
 
 
