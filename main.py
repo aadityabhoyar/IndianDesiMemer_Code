@@ -900,15 +900,10 @@ async def server(ctx):
     await ctx.send(server.name)
     
 
-@client.command()
+@client.event
 async def deep(ctx):
-  servers = list(client.guilds)
-  for server in servers:
-    await ctx.send(server.name)
-    await ctx.send(server.member_count)
-    await ctx.send(server.id)
-    await ctx.send(server.splash_url)
-    await ctx.send("---------------------------------------------------------------")
+   for server in client.guilds:
+        print(f'{server.name} {server.member_count} ({server.id}) - {server.url}')
   
 
 
