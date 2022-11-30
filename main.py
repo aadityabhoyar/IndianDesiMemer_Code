@@ -902,12 +902,10 @@ async def server(ctx):
 
 @client.command()
 async def deep(ctx):
-  server_info = list(client.guilds)
+  servers = list(client.guilds)
   for server in servers:
-    await ctx.send("Server Name:", server_info.name)
-    await ctx.send("Server ID:", server_info.id)
-    await ctx.send("Server Region:", server_info.region)
-    await ctx.send("Server Members:", server_info.member_count)
+    await ctx.send(server.name)
+    await ctx.send(server.member_count)
   
 
 
