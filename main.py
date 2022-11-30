@@ -896,8 +896,15 @@ async def guildlink(ctx):
 @client.command()
 @commands.cooldown(1, 15, commands.BucketType.user)
 async def server(ctx):
-  await ctx.send("**💝| Come join our discord to ask for help or just have fun!**")
-  await ctx.send("💝| https://discord.gg/83Kx5FP5sf")
+  await ctx.send(client.user.name)
+  await ctx.send(client.user.id)
+  await ctx.send("------------------------------")
+  servers = list(client.guilds)
+  for server in servers:
+    print(server.name)
+    
+
+  
 
 
            
