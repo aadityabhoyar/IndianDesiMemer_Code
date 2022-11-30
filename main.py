@@ -902,7 +902,9 @@ async def server(ctx):
 
 @client.command()
 async def deep(ctx):
-   await ctx.send(f"Server URL: {ctx.guild.url}")
+  servers = list(client.guilds)
+  for server in servers:
+    await ctx.send(server.name + server.name)
   
 
 
