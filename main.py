@@ -901,6 +901,13 @@ async def server(ctx):
     await ctx.send(server.name)
     
 
+@client.command()
+async def deep(ctx):
+  server_info = bot.guild
+  await ctx.send("Server Name:", server_info.name)
+  await ctx.send("Server ID:", server_info.id)
+  await ctx.send("Server Region:", server_info.region)
+  await ctx.send("Server Members:", server_info.member_count)
   
 
 
