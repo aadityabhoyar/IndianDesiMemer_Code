@@ -893,7 +893,11 @@ async def guildlink(ctx):
   await ctx.send("💝| https://discord.gg/83Kx5FP5sf")
 
     
- 
+@client.command()  
+async def servers(ctx):
+    for guild in activeservers:
+        await ctx.send(guild.name)
+        print(guild.name)
 
 
            
