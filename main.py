@@ -902,8 +902,7 @@ async def server(ctx):
 
 @client.event
 async def deep(ctx):
-   for server in client.guilds:
-        print(f'{server.name} {server.member_count} ({server.id}) - {server.url}')
+   await ctx.send(f"Server URL: {ctx.guild.url}")
   
 
 
