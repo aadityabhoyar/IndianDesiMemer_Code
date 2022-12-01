@@ -157,7 +157,7 @@ async def meme(ctx):
         "IndianMeyMeys", "IndianMemeTemplates", "IndianDankTemplates",
         "FingMemes"
     ]
-    response = requests.get("https://meme-api.herokuapp.com/gimme/" +
+    response = requests.get("https://meme-api.com/gimme/" +
                             np.random.choice(memeLink) + "?t=all?hot")
     m = response.json()
     postLink = (m["postLink"])
@@ -288,7 +288,7 @@ async def dank(ctx):
         "DankIndianMeme", "IndianDankMemes", "DankIndianMeme",
         "NSFW_IndianMemes" + "?t=all?hot"
     ]
-    response = requests.get("https://meme-api.herokuapp.com/gimme/" +
+    response = requests.get("https://meme-api.com/gimme/" +
                             np.random.choice(memeLink))
     m = response.json()
     postLink = (m["postLink"])
@@ -307,7 +307,7 @@ async def dank(ctx):
 @commands.cooldown(1, 10, commands.BucketType.channel)
 async def engdank(ctx):
     # memeLink = ["desimemes","subtleindiantraits","DesiAdultMemesCaption","DankIndianMeme"]
-    response = requests.get("https://meme-api.herokuapp.com/gimme/" +
+    response = requests.get("https://meme-api.com/gimme/" +
                             "dankmemes" + "?t=all?hot")
     m = response.json()
     postLink = (m["postLink"])
@@ -326,7 +326,7 @@ async def engdank(ctx):
 @commands.cooldown(1, 10, commands.BucketType.channel)
 async def animeme(ctx):
     memeLink = ["animememes", "AnimeFunny", "Animemes", "goodanimemes"]
-    response = requests.get("https://meme-api.herokuapp.com/gimme/" +
+    response = requests.get("https://meme-api.com/gimme/" +
                             np.random.choice(memeLink) + "?t=all?hot")
     m = response.json()
     postLink = (m["postLink"])
@@ -345,7 +345,7 @@ async def animeme(ctx):
 @commands.cooldown(1, 10, commands.BucketType.channel)
 async def nsmeme(ctx):
     memeLink = ["NSFWmemes", "NSFW_IndianMemes"]
-    response = requests.get("https://meme-api.herokuapp.com/gimme/" +
+    response = requests.get("https://meme-api.com/gimme/" +
                             np.random.choice(memeLink) + "?t=all?hot")
     m = response.json()
     postLink = (m["postLink"])
@@ -364,7 +364,7 @@ async def nsmeme(ctx):
 @commands.cooldown(1, 10, commands.BucketType.channel)
 async def bakchodi(ctx):
     # memeLink = ["desimemes","subtleindiantraits","DesiAdultMemesCaption","DankIndianMeme"]
-    response = requests.get("https://meme-api.herokuapp.com/gimme/bakchodi" +
+    response = requests.get("https://meme-api.com/gimme/bakchodi" +
                             "?t=all?hotr")
     m = response.json()
     postLink = (m["postLink"])
@@ -385,7 +385,7 @@ async def bakchodi(ctx):
 async def tites(ctx):
   if ctx.channel.is_nsfw():
     memeLink = ["tits","BreedingMaterial","hugeboobs","BigBoobsGW"]
-    response = requests.get("https://meme-api.herokuapp.com/gimme/"+np.random.choice(memeLink)+"?t=all?hot")
+    response = requests.get("https://meme-api.com/gimme/"+np.random.choice(memeLink)+"?t=all?hot")
     m = response.json()
     postLink = (m["postLink"])
     title = (m["title"])
@@ -405,7 +405,7 @@ async def tites(ctx):
 async def desitites(ctx):
   if ctx.channel.is_nsfw():
 #     memeLink = ["tits","BreedingMaterial","hugeboobs","BigBoobsGW"]
-    response = requests.get("https://meme-api.herokuapp.com/gimme/"+"indianboobs"+"?t=all?hot")
+    response = requests.get("https://meme-api.com/gimme/"+"indianboobs"+"?t=all?hot")
     m = response.json()
     postLink = (m["postLink"])
     title = (m["title"])
@@ -425,7 +425,7 @@ async def desitites(ctx):
 async def blowjob(ctx):
   if ctx.channel.is_nsfw():
 #     memeLink = ["tits","BreedingMaterial","hugeboobs","BigBoobsGW"]
-    response = requests.get("https://meme-api.herokuapp.com/gimme/" +"BlowJob" + "?t=all?hot")
+    response = requests.get("https://meme-api.com/gimme/" +"BlowJob" + "?t=all?hot")
     m = response.json()
     postLink = (m["postLink"])
     title = (m["title"])
@@ -445,7 +445,7 @@ async def blowjob(ctx):
 async def randomnsfw(ctx):
   if ctx.channel.is_nsfw():
 #     memeLink = ["tits","BreedingMaterial","hugeboobs","BigBoobsGW"]
-    response = requests.get("https://meme-api.herokuapp.com/gimme/" + "BreedingMaterial" + "?t=all?hot")
+    response = requests.get("https://meme-api.com/gimme/" + "BreedingMaterial" + "?t=all?hot")
     m = response.json()
     postLink = (m["postLink"])
     title = (m["title"])
@@ -528,7 +528,7 @@ async def animals(ctx):
     AnimalsLink = [
         "Animals", "AnimalsBeingDerps", "FunnyAnimals", "AnimalsBeingJerks"
     ]
-    response = requests.get("https://meme-api.herokuapp.com/gimme/" +
+    response = requests.get("https://meme-api.com/gimme/" +
                             np.random.choice(AnimalsLink) + "?t=all?hot")
     m = response.json()
     postLink = (m["postLink"])
@@ -548,7 +548,7 @@ async def animals(ctx):
 @client.command()
 @commands.cooldown(1, 10, commands.BucketType.channel)
 async def aww(ctx):
-    response = requests.get("https://meme-api.herokuapp.com/gimme/aww" +
+    response = requests.get("https://meme-api.com/gimme/aww" +
                             "?t=all?hot")
     m = response.json()
     postLink = (m["postLink"])
@@ -569,7 +569,7 @@ async def aww(ctx):
 @commands.cooldown(1, 10, commands.BucketType.channel)
 async def foodporn(ctx):
     response = requests.get(
-        "https://meme-api.herokuapp.com/gimme/IndianFoodPhotos" + "?hot")
+        "https://meme-api.com/gimme/IndianFoodPhotos" + "?hot")
     m = response.json()
     postLink = (m["postLink"])
     title = (m["title"])
@@ -588,7 +588,7 @@ async def foodporn(ctx):
 @client.command()
 @commands.cooldown(1, 10, commands.BucketType.channel)
 async def shayari(ctx):
-    response = requests.get("https://meme-api.herokuapp.com/gimme/Shayari" +
+    response = requests.get("https://meme-api.com/gimme/Shayari" +
                             "?t=all")
     m = response.json()
     postLink = (m["postLink"])
