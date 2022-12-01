@@ -425,7 +425,7 @@ async def desitites(ctx):
 async def blowjob(ctx):
   if ctx.channel.is_nsfw():
 #     memeLink = ["tits","BreedingMaterial","hugeboobs","BigBoobsGW"]
-    response = requests.get("https://meme-api.com/gimme/" +"BlowJob" + "?t=all?hot")
+    response = requests.get("https://meme-api.com/gimme/" +"BlowJob")
     m = response.json()
     postLink = (m["postLink"])
     title = (m["title"])
