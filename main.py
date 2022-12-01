@@ -384,7 +384,7 @@ async def bakchodi(ctx):
 @commands.cooldown(1, 5, commands.BucketType.channel)
 async def tites(ctx):
   if ctx.channel.is_nsfw():
-    memeLink = ["tits","BreedingMaterial","hugeboobs","BigBoobsGW"]
+    memeLink = ["tits","BreedingMaterial","hugeboobs","BigBoobsGW","boobs"]
     response = requests.get("https://meme-api.com/gimme/"+np.random.choice(memeLink)+"?t=all?hot")
     m = response.json()
     postLink = (m["postLink"])
@@ -404,8 +404,8 @@ async def tites(ctx):
 @commands.cooldown(1, 5, commands.BucketType.channel)
 async def desitites(ctx):
   if ctx.channel.is_nsfw():
-#     memeLink = ["tits","BreedingMaterial","hugeboobs","BigBoobsGW"]
-    response = requests.get("https://meme-api.com/gimme/"+"indianboobs"+"?t=all?hot")
+    memeLink = ["HotDesiSluts","boobs","IndianHotwife","DesiBoners"]
+    response = requests.get("https://meme-api.com/gimme/"+np.random.choice(memeLink))
     m = response.json()
     postLink = (m["postLink"])
     title = (m["title"])
@@ -444,8 +444,8 @@ async def blowjob(ctx):
 @commands.cooldown(1, 5, commands.BucketType.channel)
 async def randomnsfw(ctx):
   if ctx.channel.is_nsfw():
-#     memeLink = ["tits","BreedingMaterial","hugeboobs","BigBoobsGW"]
-    response = requests.get("https://meme-api.com/gimme/" + "BreedingMaterial" + "?t=all?hot")
+    memeLink = ["BreedingMaterial","UnratedPanda","gonewild","Stacked"]
+    response = requests.get("https://meme-api.com/gimme/"+np.random.choice(memeLink))
     m = response.json()
     postLink = (m["postLink"])
     title = (m["title"])
