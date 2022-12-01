@@ -37,7 +37,7 @@ async def help(ctx):
     embed = discord.Embed(
         title="IndianDesiMemer Help Center ✨",
         url=
-        "https://discord.com/api/oauth2/authorize?client_id=987391836886794260&permissions=122406693952&scope=bot",
+        "https://discord.com/oauth2/authorize?client_id=987391836886794260&permissions=517543905344&scope=bot%20applications.commands",
         color=0xF49726)
     embed.add_field(
         name="Command Categories :",
