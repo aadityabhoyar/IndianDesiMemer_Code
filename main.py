@@ -865,7 +865,7 @@ async def stats(ctx):
       color=0xF49726
     )
   
-  embed.add_field(name="Bot Version", value = "0.0.12", inline=True)
+  embed.add_field(name="Bot Version", value = "0.0.51", inline=True)
   embed.add_field(name="System Version", value= system , inline=True)
   embed.add_field(name="Discord.py Version", value= discord_version , inline=True)
   embed.add_field(name="Available Memory", value= "{0}%".format(round(psutil.virtual_memory().available * 100 / psutil.virtual_memory().total)), inline=True)
@@ -873,7 +873,7 @@ async def stats(ctx):
   embed.add_field(name="RAM Usage", value= "{0}%".format(psutil.virtual_memory()[2]), inline=True)
   embed.add_field(name="Server Joined", value=str(len(client.guilds)), inline=True)
   embed.add_field(name="Latency", value= latency, inline=True)
-  embed.add_field(name="Last Update", value="26 Jun 2022", inline=True)
+  embed.add_field(name="Last Update", value="2 Dec 2022", inline=True)
   await ctx.send(embed=embed)
 
 
